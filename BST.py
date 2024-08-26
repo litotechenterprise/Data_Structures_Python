@@ -120,19 +120,4 @@ class BinarySearchTree(object):
             self.travserseInOrder(node.rightChild)
 
 
-# testing binary search tree
-# If you were to use characters to insert and try to traverse thru the tree it will print out their aphbetical order
 
-
-bst = BinarySearchTree()
-bst.insert(3433333333)
-bst.insert(22)
-bst.insert(4)
-bst.insert(52)
-bst.insert(43)
-bst.insert(2)
-bst.insert(242)
-bst.travserse()
-print("Now using the remove method")
-bst.remove(4)
-bst.travserse()

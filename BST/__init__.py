@@ -1,0 +1,4 @@
+
+
+class BinaryNode:
+    pass
