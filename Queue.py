@@ -1,7 +1,4 @@
-
-# FIFO --> First in first out
 class Queue:
-
     def __init__(self):
         self.queue = []
 
@@ -26,7 +23,6 @@ class Queue:
 # Testing Queue
 
 queue = Queue()
-
 queue.enqueue(30)
 queue.enqueue(45)
 queue.enqueue(6654)
