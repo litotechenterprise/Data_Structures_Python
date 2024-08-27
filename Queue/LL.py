@@ -11,7 +11,7 @@ class Queue:
         self.last = None
 
     def peek(self):
-        return
+        return self.first
 
     def enqueue(self, data):
         new_last_node = Node(data)
@@ -19,10 +19,10 @@ class Queue:
 
         if is_empty_list:
             self.first = new_last_node
-            self.last = new_last_node
         else:
             self.last.prev = new_last_node
-            self.last = new_last_node
+
+        self.last = new_last_node
 
         return new_last_node
     
@@ -36,12 +36,8 @@ class Queue:
         if self.first == self.last:
             self.last = None
 
-        self.first =removed_item.prev
+        self.first = removed_item.prev
 
         return removed_item
 
-
-
-    def dequeue(self):
-        pass
 
