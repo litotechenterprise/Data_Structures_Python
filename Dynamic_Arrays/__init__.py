@@ -5,10 +5,10 @@ class DynamicArray:
         self.data = {}
 
 
-    def get(self, index):
+    def get(self, index:int):
         return self.data[index]
     
-    def push(self, item):
+    def push(self, item) -> int:
         self.data[self.length] = item
         self.length += 1
         return self.length
@@ -24,7 +24,7 @@ class DynamicArray:
         return popped_item
     
 
-    def insert(self, index, item):
+    def insert(self, index:int, item):
         if index > self.length -1 or index < 0:
             return None
         
@@ -37,7 +37,7 @@ class DynamicArray:
 
         return self.data
     
-    def remove(self, index):
+    def remove(self, index: int):
         if self.length == 0:
             return None
         

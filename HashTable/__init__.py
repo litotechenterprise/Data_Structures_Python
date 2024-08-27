@@ -2,8 +2,7 @@
 
 # All Operations operate in constant time
 class HashTable:
-
-    def __init__(self, size):
+    def __init__(self, size: int):
         self.size = size
         self.table = [[] for _ in range(size)]
 
